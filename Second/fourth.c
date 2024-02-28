@@ -1,4 +1,4 @@
-// Inverted Full Pyramid (ex.)
+// Inverted Full Pyramid
 
 # include <stdio.h>
 
@@ -9,10 +9,10 @@ int main() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
-        for (int j = 1; j <= (i * 2 - i) - 1; j++) {
+        for (int j = 1; j <= i * 2 - 2; j++) {
             printf(" ");
         }
-        for (int k = n; k >= i; k--) {
+        for (int k = n * 2; k >= i * 2; k--) {
             printf("* ");
         }
         printf("\n");
